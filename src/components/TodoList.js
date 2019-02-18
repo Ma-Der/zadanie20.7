@@ -1,13 +1,11 @@
 import React from 'react';
 import style from './TodoList.css';
+import Todo from './Todo';
 
 function TodoList(props) {
-  let todoList = props.list.map(function(todoElement) {
-    return (<li key={todoElement.id}>{todoElement.text}</li>);
-  });
   return (
     <div className={style.TodoList}>
-    <ul>{todoList}</ul>
+    <ul><Todo element={props.list} removeTodoElement={props.remove}/></ul>
     </div>
   );
 }
