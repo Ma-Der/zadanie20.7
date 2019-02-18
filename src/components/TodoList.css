@@ -1,3 +1,11 @@
 .TodoList {
-  background-color: green;
+  background-color: #ccff99;
+  margin: 0 auto;
+  padding: 10px;
+}
+.TodoList li {
+  font-size: 18px;
+  color: #ff0000;
+  list-style-type: disc;
+  padding: 15px;
 }

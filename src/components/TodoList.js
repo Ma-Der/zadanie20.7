@@ -6,7 +6,9 @@ function TodoList(props) {
     return (<li key={todoElement.id}>{todoElement.text}</li>);
   });
   return (
-    <ul className={style.TodoList}>{todoList}</ul>
+    <div className={style.TodoList}>
+    <ul>{todoList}</ul>
+    </div>
   );
 }
 

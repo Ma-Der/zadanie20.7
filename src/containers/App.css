@@ -1,5 +1,6 @@
 .TodoApp {
   background-color: #F5F5F5;
+  border: 1px solid #ff6600;
   color: #222;
   display: flex;
   flex-direction: column;
@@ -11,5 +12,7 @@
   height: 100vh;
 }
 .TodoApp h1 {
-  background-color: yellow;
+  background-color: #66ff66;
+  padding: 10px;
+  color: #cc0000;
 }
