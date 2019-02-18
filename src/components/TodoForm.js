@@ -34,8 +34,6 @@ class TodoForm extends React.Component {
       </form>
     );
   }
-  componentDidMount() {
-    this.state.addTodo(this.state.list.id);
-  }
+
 }
 export default TodoForm;
