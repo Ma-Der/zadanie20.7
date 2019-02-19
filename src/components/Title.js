@@ -1,19 +1,11 @@
 import React from 'react';
 
-class Title extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      counter: props.todoCount
-    };
-  }
-  render() {
+function Title(props) {
     return (
       <div>
-      <h1>Things to do ({this.state.counter})</h1>
+      <h1>Things to do ({props.todoCount})</h1>
       </div>
     );
-  }
 }
 
 export default Title;

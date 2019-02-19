@@ -5,7 +5,12 @@ import Todo from './Todo';
 function TodoList(props) {
   return (
     <div className={style.TodoList}>
-    <ul><Todo element={props.list} removeTodoElement={props.remove}/></ul>
+    <ul> {props.list.map(function(todoElement) {
+        return (
+          <Todo listEl={todoElement} removeTodo={() => props.removeTodo(todoElement.id)}/>
+        )
+      })
+    }</ul>
     </div>
   );
 }

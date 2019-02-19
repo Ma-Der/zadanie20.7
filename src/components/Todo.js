@@ -2,10 +2,8 @@ import React from 'react';
 
 function Todo(props) {
   return (
-  props.element.map(function(todoElement) {
-    return (<li onClick={props.removeTodoElement(todoElement.id)} key={todoElement.id}>{todoElement.text}</li>)
-  })
-);
+    <li onClick={props.removeTodo} key={props.listEl.id}>{props.listEl.text}</li>
+  );
 }
 
 export default Todo;
